@@ -1,0 +1,534 @@
+:root {
+
+    font-size: 6.25%;
+    --gray30: #212121;
+    --gray20: #424242;
+    --gray10: #616161;
+    --gray0: #9e9e9e24;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto',sans-serif;
+    margin: 0;
+
+}
+
+
+
+.header {
+    /* border: 1px solid red; */
+    top:  0;
+    
+}
+
+
+/* .header-content{
+    
+    background: red;
+} */
+
+header {
+margin-block-start: 30px;
+color: var(--gray10);
+/* background: red; */
+line-height: 30px;
+inline-size: 188px;
+/* top: 64px; */
+inset-block-start: 64px ;
+inset-inline-start: -322px;
+/* left:-322px; */
+
+}
+
+
+header summary{
+/* background: red; */
+font-size: 18rem;
+font-weight: bold;
+
+}
+
+
+header li{
+/* background: red; */
+    font-size: 16rem;
+   color: var(--gray10);
+}
+
+
+
+
+.wrapper {
+
+    max-inline-size: 902px;
+    margin: auto;
+
+    /* border: 1px solid  red; */
+}
+
+
+
+
+hr {
+
+    /* margin: 40px 0; */
+    margin-block: 40px;
+    border-color: 1px solid rgba(108, 10, 10, 0.02);
+
+
+}
+
+
+h1 {
+    font-size: 60rem;
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+    /* margin: 64px 0 16px 0 */
+    /* margin-top: 64px;
+    margin-bottom: 16px; */
+}
+
+
+
+h3 {
+    color: var(--gray20);
+    font-size: 16rem ;
+
+}
+
+h2 {
+    color: var(--gray30);
+    font-size: 24rem;
+}
+
+
+
+.secciontres ul li {
+    font-size: 16rem;
+}
+
+.secciontres ol li {
+    font-size: 16rem;
+}
+
+.hero {
+/* background: red; */
+
+height: 300px;
+background-image:linear-gradient(to top, rgba(255,255,255,.3),transparent), url('../ARCHIVOS/images/pattern.png');
+}
+
+header ol a {
+    /* background: red; */
+    text-decoration: none;
+}
+
+summary {
+
+    font-size: 16rem;
+}
+
+
+
+blockquote {
+    font-size: 16rem;
+}
+
+
+footer {
+    /* background: red; */
+    font-size: 16rem;
+}
+
+footer a {
+    /* background: red; */
+    text-decoration: none;
+}
+
+/* COMIENZAN LOS ESTILOS */
+
+h1 + h3 {
+    /* background: red; */
+    /* margin-block-start: 16px; */
+    margin-block-end: 64px;
+    /* background: red; */
+}
+
+
+
+
+
+
+
+.seccionuno h2 {
+
+    counter-increment: titleList;
+}
+
+.seccionuno h2::before{
+    content:  counter(titleList) "." ;
+}
+
+
+
+.seccionuno .subtitulo{
+    /* background: red; */
+    position: relative;
+   padding-block-end: 8px;
+}
+
+
+
+.seccionuno .subtitulo::after {
+    content: '';
+    display: inline-block;
+    block-size: 4px;
+    inline-size: 80px;
+   background: var(--gray20);
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+
+
+
+
+
+}
+
+
+
+
+
+.seccionuno img {
+    display: block;
+    /* background: red; */
+    /* margin-block-start: 40px; */
+    margin-block-end: 16px;
+}
+
+
+
+
+.seccionuno h3{
+    /* background: red; */
+    margin-block-start: 24px;
+    margin-block-end: 40px;
+}
+
+
+
+.seccionuno h2 {
+    /* background: red; */
+    margin-block-start:16px;
+    margin-block-end: 24px;
+
+
+}
+
+.seccionuno  h3:last-of-type {
+    /* background: red; */
+    margin-block-end: 32px
+
+}
+
+/* blockquote > p {
+    background: red;
+} */
+
+blockquote p:nth-child(2){
+     /* background: red;  */
+     /* margin-block-start: 0;  */
+    margin-block-end: 64px;
+}
+
+/* CONCEPTOS ESCENCIALES DEL DESARROLLO WEB */
+ .conceptos{
+    /* background: red; */
+    margin-block-end: 40px;
+    margin-block-start: 0PX;
+}
+
+
+.secciondos h2 + h2 {
+    /* background: red; */
+    margin-block-start: 40px;
+    margin-block-end: 24px;
+}
+
+
+/* HYPER TEXT MARKUP LANGUAGE O LENGUAJE DE (H3)*/
+.secciondos  h2 + h3:first-of-type {
+    /* background: red; */
+    margin-block-start: 24px;
+}
+
+pre {
+    font-size: 16rem;
+    /* background: #FEC62E; */
+    block-size: 344px;
+    inline-size: 900px;
+    margin-block-end: 40px;
+    padding-block-start: 16px;
+    padding-inline-start: 16px;
+
+}
+
+
+
+pre + h2 {
+    /* background: red; */
+    margin-block-start: 40px;
+    margin-block-end: 24px;
+}
+
+pre + h2 + h3 {
+    /* background: red; */
+    margin-block-start: 24px;
+}
+
+
+#Etiquetas + h3 + h3{
+/* background: red; */
+margin-block-end: 40px;
+}
+
+#DOM{
+    /* background:red; */
+    margin-block-start: 40px;
+    margin-block-end: 24px;
+}
+
+
+#DOM + h3 {
+    /* background:red; */
+    margin-block-start: 24px;
+    margin-block-end: 16px;
+}
+
+
+#Semantica {
+    /* background: red; */
+margin-block-start: 40px;
+margin-block-end: 24px;
+}
+
+#Semantica + h3 {
+    /* background: red; */
+margin-block-start: 24px;
+margin-block-end: 40px;
+}
+
+#Atributos {
+/* background: red; */
+margin-block-start: 40px;
+margin-block-end: 24px;
+}
+
+#Atributos + h3{
+    /* background: red; */
+    margin-block-start: 24px;
+    margin-block-end: 40px;
+}
+
+#CSS {
+    /* background: red; */
+    margin-block-start: 40px;
+    margin-block-end: 24px;
+}
+
+#CSS +h3 {
+    /* background: red; */
+    margin-block-start: 40px;
+    margin-block-end: 16px;
+}
+
+
+
+
+.secciontres  h2:first-of-type {
+    /* background: red; */
+    margin-block-start: 156px;
+    margin-block-end: 40px;
+}
+
+.secciontres h3:first-of-type{
+    /* background: red; */
+    margin-block-start: 40px;
+}
+
+.secciontres  h3 + h3 {
+    /* background: red; */
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+
+}
+
+.secciontres ol:first-of-type {
+/* background: red; */
+margin: block start 16px;
+margin-block-end: 40px;
+}
+
+
+.secciontres ul:first-of-type{
+    /* background: red; */
+    margin-block-start: 16px;
+}
+
+.secciontres ol + h2{
+    /* background: red; */
+    margin-block-start: 40px;
+    margin-block-end: 16px;
+}
+
+.secciontres ul + h2  {
+    /* background: red; */
+    margin-block-end: 16px;
+    margin-block-start: 40px;
+}
+
+.secciontres h3:last-of-type{
+    /* background: red; */
+    margin-block-start: 40px;
+    margin-block-end: 16px;
+}
+
+
+.slider{
+    /* border: 1px solid red; */
+}
+
+
+.slider-container{
+    display: block;
+    /* block-size: 100px; */
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    /* inline-size: 100%; */
+    
+}
+
+.video {
+    display: inline-block;
+    /* border: 1px solid blue; */
+    inline-size: 100%;
+    margin:0;
+    height: auto;
+    aspect-ratio: 16/9;
+
+}
+
+.slider a{
+    font-size: 14rem;
+}
+
+.slider-bullet-list{
+    /* border: 1px solid yellow; */
+    text-align: center;
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+    
+   
+    
+    
+    
+}
+
+.slider-bullet{
+    display: inline-block;
+    background: black;
+    block-size: 15px;
+    inline-size: 15px;
+    border-radius: 50%;
+  
+}
+
+
+
+
+
+
+footer{
+    color: var(--gray30);
+    margin-block-start: 20px;
+    margin-block-end: 50px;
+
+}
+
+footer a:hover {
+   color: var(--gray30);
+
+}
+
+footer a {
+    color: var(--gray10);
+}
+
+.form input{
+    inline-size: 100%;
+    border: 1px solid var(--gray30);
+    background: var(--gray0);
+    box-sizing: border-box ;
+    padding-inline: 16px;
+    padding-block: 12px;
+    font-size: 14rem;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input::-webkit-input-placeholder{
+    color: var(--gray10);
+}
+
+.form input:last-of-type {
+    background:rgb(45, 45, 190);
+    border: none;
+    color: whitesmoke;
+
+   
+
+}
+
+
+@media screen and (min-width: 1360px){
+
+    .header {
+       
+        top:  0;
+        position: sticky;
+    }
+    
+    
+    
+    
+    .header-content{
+        position: relative;
+        
+    }
+    
+    header {
+    position: absolute;
+    line-height: 30px;
+    inline-size: 188px;
+    inset-block-start: 64px ;
+    inset-inline-start: -322px;
+    
+    
+    }
+    
+    
+    
+}
+
+
+
+
+
